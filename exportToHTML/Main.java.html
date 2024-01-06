@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #cf8e6d;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">public class </span><span class="s0">Main </span><span class="s2">{</span>
+    <span class="s1">public static void </span><span class="s0">main</span><span class="s2">(</span><span class="s0">String</span><span class="s2">[] </span><span class="s0">args</span><span class="s2">)  {</span>
+        <a href="Phone.java.html">Phone</a> <span class="s0">myPhone </span><span class="s2">= </span><span class="s1">new <a href="Phone.java.html">Phone</a></span><span class="s2">(</span><span class="s3">123456789</span><span class="s2">, </span><span class="s4">&quot;iPhone -X&quot;</span><span class="s2">, </span><span class="s3">0.5</span><span class="s2">);</span>
+        <a href="Phone.java.html">Phone</a> <span class="s0">ainurPhone</span><span class="s2">= </span><span class="s1">new <a href="Phone.java.html">Phone</a></span><span class="s2">(</span><span class="s3">858585852</span><span class="s2">, </span><span class="s4">&quot;Iphone XX&quot;</span><span class="s2">, </span><span class="s3">0.66</span><span class="s2">);</span>
+        <a href="Phone.java.html">Phone</a> <span class="s0">nonamePhone</span><span class="s2">= </span><span class="s1">new <a href="Phone.java.html">Phone</a></span><span class="s2">();</span>
+
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;инфа о моем типоне :&quot;</span><span class="s2">);</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">info</span><span class="s2">();</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;------&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;инфа о  типоне Айнурочки :&quot;</span><span class="s2">);</span>
+        <span class="s0">ainurPhone</span><span class="s2">.</span><span class="s0">info</span><span class="s2">();</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;------&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;инфа о типоне нн-ма:&quot;</span><span class="s2">);</span>
+        <span class="s0">nonamePhone</span><span class="s2">.</span><span class="s0">info</span><span class="s2">();</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;------&quot;</span><span class="s2">);        </span><span class="s5">//  инфа о экземпляраа</span>
+
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">receiveCall</span><span class="s2">(</span><span class="s4">&quot;дарияшка&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;мой номер типона :&quot;</span><span class="s2">+ </span><span class="s0">myPhone</span><span class="s2">.</span><span class="s0">getNumber</span><span class="s2">());</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">receiveCall</span><span class="s2">(</span><span class="s4">&quot;айнурбечкин&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;номер типона айнурбечки:&quot;</span><span class="s2">+ </span><span class="s0">ainurPhone</span><span class="s2">.</span><span class="s0">getNumber</span><span class="s2">());</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">receiveCall</span><span class="s2">(</span><span class="s4">&quot;дарияшка&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;ноунейма номер :&quot;</span><span class="s2">+ </span><span class="s0">nonamePhone</span><span class="s2">.</span><span class="s0">getNumber</span><span class="s2">());</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">sendMessage</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">);</span>
+        <span class="s0">ainurPhone</span><span class="s2">.</span><span class="s0">sendMessage</span><span class="s2">(</span><span class="s4">&quot;&quot; </span><span class="s2">);</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">setNumber</span><span class="s2">(</span><span class="s3">987654321</span><span class="s2">);</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">setModel</span><span class="s2">(</span><span class="s4">&quot;Samsung Galaxy S21&quot;</span><span class="s2">);</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">setWeight</span><span class="s2">(</span><span class="s3">0.6</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;------&quot;</span><span class="s2">);</span>
+        <span class="s0">System</span><span class="s2">.</span><span class="s0">out</span><span class="s2">.</span><span class="s0">println</span><span class="s2">(</span><span class="s4">&quot;Обновленная информация о телефоне Дарии:&quot;</span><span class="s2">);</span>
+        <span class="s0">myPhone</span><span class="s2">.</span><span class="s0">info</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
